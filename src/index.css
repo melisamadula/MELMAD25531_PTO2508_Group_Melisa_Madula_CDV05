@@ -109,6 +109,18 @@ article.website-entry .main-image {
     line-height: 1.5;
 }
 
+.info-container .portfolio-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.info-container .portfolio-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
 /* Footer styles */
 
 .footer-icon {
