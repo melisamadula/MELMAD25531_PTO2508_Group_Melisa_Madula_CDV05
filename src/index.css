@@ -11,6 +11,8 @@ body {
     font-family: Inter;
     display: flex;
     flex-direction: column;
+    background-color: #0f172a;
+    color: white;
 }
 
 #root {
@@ -30,11 +32,11 @@ main {
 }
 
 header {
-    background: black;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     height: 55px;
 }
 
@@ -48,6 +50,7 @@ header > h1 {
 article.website-entry {
     display: flex;
     margin-bottom: 36px;
+    background-color: #0f172a;
 }
 
 article.website-entry .main-image-container {
@@ -68,11 +71,16 @@ article.website-entry .main-image {
 /* Info container styles */
 
 .info-container a {
-    color: #2B283A;
+    color: white;
     font-size: 0.7rem;
 }
 
 .info-container a:visited {
+    color: #918E9B;
+}
+
+.info-container a:hover {
+    text-decoration: double underline;
     color: #918E9B;
 }
 
@@ -103,12 +111,17 @@ article.website-entry .main-image {
     margin-right: 10px;
 }
 
+.footer-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     height: 55px;
 }
 
