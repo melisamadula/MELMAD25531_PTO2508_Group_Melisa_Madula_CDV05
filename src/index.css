@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
 }
@@ -6,12 +10,15 @@ body {
     font-family: Inter;
 }
 
+/* Global styles */
+
+
 .container {
     margin: 45px 40px;
 }
 
 header {
-    background: #F55A5A;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +30,8 @@ header > h1 {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/* Entry styles */
 
 article.website-entry {
     display: flex;
@@ -43,6 +52,8 @@ article.website-entry .main-image {
     width: 100%;
     object-fit: cover;
 }
+
+/* Info container styles */
 
 .info-container a {
     color: #2B283A;
@@ -84,7 +95,7 @@ article.website-entry .main-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F55A5A;
+    background: black;
     color: white;
     height: 55px;
 }

@@ -15,6 +15,6 @@ export default [
             alt: "Picture of the word Resume",
         },
         title: "Software Developer Resume",
-        text: "My resume will give you a comprehensive overview of my skills and experience as a software developer. It highlights my technical expertise, project accomplishments, and professional background. You can view my resume by clicking the link provided [https://docs.google.com/document/d/1ZQeiCOFTdVsaa9KKMGg34nFQWjP8bR4m5qTi23XMj6A/edit?usp=sharing]."
+        text: "My resume will give you a comprehensive overview of my skills and experience as a software developer. It highlights my technical expertise, project accomplishments, and professional background. You can view my resume by clicking the linked Google docs icon below in the footer."
     },
 ]
