@@ -9,10 +9,10 @@ export default function Entry(props) {
                 />
             </div>
             <div className="info-container">
-                <a href={props.siteLink} target="_blank">View on Site</a>
                 <h2 className="entry-title">{props.title}</h2>
                 <p className="entry-text">{props.text}</p>
             </div> 
         </article>
     )
 }
+    
