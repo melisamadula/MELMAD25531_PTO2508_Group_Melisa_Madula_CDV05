@@ -19,11 +19,6 @@ header {
     height: 55px;
 }
 
-header > img {
-    width: 24px;
-    margin-right: 7px;
-}
-
 header > h1 {
     font-size: 0.9rem;
     font-weight: 500;
@@ -75,4 +70,25 @@ article.website-entry .main-image {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* Footer styles */
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F55A5A;
+    color: white;
+    height: 55px;
+}
+
+.footer-text {
+    padding-right: 10px;
 }
