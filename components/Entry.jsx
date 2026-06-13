@@ -1,0 +1,18 @@
+export default function Entry(props) {
+    return (
+        <article className="website-entry">
+            <div className="main-image-container">
+                <img 
+                    className="main-image"
+                    src={props.img.src}
+                    alt={props.img.alt}
+                />
+            </div>
+            <div className="info-container">
+                <a href={props.siteLink} target="_blank">View on Site</a>
+                <h2 className="entry-title">{props.title}</h2>
+                <p className="entry-text">{props.text}</p>
+            </div> 
+        </article>
+    )
+}
