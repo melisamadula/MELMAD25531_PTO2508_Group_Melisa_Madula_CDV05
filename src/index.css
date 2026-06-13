@@ -128,3 +128,38 @@ article.website-entry .main-image {
 .footer-text {
     padding-right: 10px;
 }
+
+
+/******* Responsive styles ********/
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    article.website-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.website-entry .main-image-container {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    article.website-entry .main-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .info-container h2.entry-title {
+        text-align: center;
+    }
+
+    .info-container p.entry-text {
+        line-clamp: unset;
+        -webkit-line-clamp: unset;
+    }
+}
