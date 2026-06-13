@@ -17,6 +17,16 @@ export default function Entry() {
                         View My Resume
                     </a>
                 </div>
+                <div className="portfolio-section">
+                    <h2>Portfolios:</h2>
+                    <ol className="portfolio-list">
+                        <li><a href="https://github.com/MelisaMadula" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <p className="portfolio-description">This</p>
+                        <li><a href="https://www.linkedin.com/in/melisa-madula-24a8213b5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <p className="portfolio-description">That</p>
+                    </ol>
+                    <p className="entry-text">More information about my work can be found in the links above and below.</p>
+                </div>
             </div> 
         </article>
     )

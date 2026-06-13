@@ -54,12 +54,13 @@ article.website-entry {
 }
 
 article.website-entry .main-image-container {
-    width: 125px;
-    height: 168px;
+    width: 30%;
+    height: 100%;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 15px;
     flex-shrink: 0;
     margin-right: 19px;
+    border:white solid 5px;
 }
 
 article.website-entry .main-image {
@@ -103,6 +104,11 @@ article.website-entry .main-image {
     overflow: hidden;
 }
 
+.info-container p.portfolio-description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
 /* Footer styles */
 
 .footer-icon {
@@ -144,7 +150,7 @@ article.website-entry .main-image {
 
     article.website-entry .main-image-container {
         width: 100%;
-        height: auto;
+        height: 40%;
         margin-right: 0;
         margin-bottom: 15px;
     }
