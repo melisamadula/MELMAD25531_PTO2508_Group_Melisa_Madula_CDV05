@@ -47,26 +47,37 @@ header > h1 {
 
 /* Entry styles */
 
-article.website-entry {
+.website-entry {
     display: flex;
     margin-bottom: 36px;
     background-color: #0f172a;
 }
 
-article.website-entry .main-image-container {
-    width: 30%;
-    height: 100%;
+.main-image-container {
+    width: 100%;
+    height: 20%;
     overflow: hidden;
     border-radius: 15px;
     flex-shrink: 0;
     margin-right: 19px;
     border:white solid 5px;
+    display: flex;
+    flex-direction: row;
 }
 
-article.website-entry .main-image {
+.main-image {
+    display: flex;
     height: 100%;
-    width: 100%;
+    width: 30%;
     object-fit: cover;
+}
+
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
 }
 
 /* Info container styles */
@@ -85,16 +96,12 @@ article.website-entry .main-image {
     color: #918E9B;
 }
 
-.info-container h2.entry-title {
+h2.entry-title {
     margin-top: 7px;
     margin-bottom: 17px;
 }
 
-.info-container p.trip-dates {
-    font-weight: bold;
-}
-
-.info-container p.entry-text {
+p.entry-text {
     line-height: 1.5;
     font-size: 0.8rem;
     display: -webkit-box;
@@ -104,19 +111,19 @@ article.website-entry .main-image {
     overflow: hidden;
 }
 
-.info-container p.portfolio-description {
+p.portfolio-description {
     font-size: 0.8rem;
     line-height: 1.5;
 }
 
-.info-container .portfolio-list {
+.portfolio-list {
     list-style-type: none;
     margin-top: 10px;
 }
 
-.info-container .portfolio-image {
-    width: 100%;
-    height: auto;
+.portfolio-image {
+    width: 50%;
+    height: 20%;
     margin-top: 10px;
     border-radius: 15px;
 }
