@@ -21,20 +21,26 @@ export default function Entry() {
                 </div>
                 <div className="portfolio-section">
                     <h2>Portfolios:</h2>
-                    <ul className="portfolio-list">
-                        <li><a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_DJS02" target="_blank" rel="noopener noreferrer">
+                    <div className="portfolio-list">
+                        <div className="portfolio-item">
+                            <a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_DJS02" target="_blank" rel="noopener noreferrer">
                             <img className="portfolio-image" src="./images/desktop_view.png" alt="Desktop View of Podcast App" />
-                        </a></li>
-                        <p className="portfolio-description">[DJS02 – Web Component: Podcast Preview]: In this project, you will build a reusable and encapsulated custom HTML element that displays a podcast preview. The component must follow the Web Component standard, using customElements.define() and should work independently from the main application logic. This component will enhance modularity, promote reuse, and reduce code duplication across the app. The component should be designed to accept podcast data via attributes or properties, display relevant UI elements (such as title, cover image, and genres), and communicate with the main application through custom events.</p>
-                        <li><a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_JSLPP.git" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <p className="portfolio-description">[DJS02 – Web Component: Podcast Preview]: In this project, you will build a reusable and encapsulated custom HTML element that displays a podcast preview. The component must follow the Web Component standard, using customElements.define() and should work independently from the main application logic. This component will enhance modularity, promote reuse, and reduce code duplication across the app. The component should be designed to accept podcast data via attributes or properties, display relevant UI elements (such as title, cover image, and genres), and communicate with the main application through custom events.</p>
+                        </div>
+                        <div className="portfolio-item">
+                            <a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_JSLPP.git" target="_blank" rel="noopener noreferrer">
                             <img className="portfolio-image" src="./images/Desktop Light Mode.jpg" alt="Desktop View of Kanban App" />
-                        </a></li>
-                        <p className="portfolio-description">[JSL Portfolio Piece: Kanban App Deployment & Features Implementation]: This project involves deploying a Kanban app to Netlify, ensuring the app's functionality and persistence through local storage, and implementing dynamic features such as task editing, deletion, sidebar interaction, and a theme toggle. The goal is to deliver a fully functional, deployable application that is responsive across devices and maintains data consistency. Students will also focus on clean, modular code that is well-documented for future development.</p>
-                        <li><a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_JSL02.git" target="_blank" rel="noopener noreferrer">
-                            <img className="portfolio-image" src="./images/title prompt.png" alt="Prompt Input for Task Entry Example" />
-                        </a></li>
-                        <p className="portfolio-description">[JSL02 Project Brief: Task Input and Status Validation System]: This project involves implementing a JavaScript-based task entry system where users can input two tasks with complete details, ensuring data consistency and validation. The system will guide users through entering valid task titles, descriptions, and statuses, enforcing correct formatting while maintaining code clarity and maintainability.</p>
-                    </ul>
+                            </a>
+                            <p className="portfolio-description">[JSL Portfolio Piece: Kanban App Deployment & Features Implementation]: This project involves deploying a Kanban app to Netlify, ensuring the app's functionality and persistence through local storage, and implementing dynamic features such as task editing, deletion, sidebar interaction, and a theme toggle. The goal is to deliver a fully functional, deployable application that is responsive across devices and maintains data consistency. Students will also focus on clean, modular code that is well-documented for future development.</p>
+                        </div>
+                        <div className="portfolio-item">
+                            <a href="https://github.com/melisamadula/MELMAD25531_PTO2508_Group_Melisa_Madula_JSL02.git" target="_blank" rel="noopener noreferrer">
+                                <img className="portfolio-image" src="./images/title prompt.png" alt="Prompt Input for Task Entry Example" />
+                            </a>
+                            <p className="portfolio-description">[JSL02 Project Brief: Task Input and Status Validation System]: This project involves implementing a JavaScript-based task entry system where users can input two tasks with complete details, ensuring data consistency and validation. The system will guide users through entering valid task titles, descriptions, and statuses, enforcing correct formatting while maintaining code clarity and maintainability.</p>
+                        </div>
+                    </div>
                     <p className="entry-text">More information about my work can be found in the links above and below. All my projects are available on my GitHub profile and the few Portfolios listed above (clickable links via the images).</p>
                 </div>
             </div> 

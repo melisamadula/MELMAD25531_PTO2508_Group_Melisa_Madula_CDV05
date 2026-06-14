@@ -111,21 +111,53 @@ p.entry-text {
     overflow: hidden;
 }
 
+/* Portfolio styles */
+
+.portfolio-section {
+    margin-top: 30px;
+}
+
 p.portfolio-description {
     font-size: 0.8rem;
     line-height: 1.5;
+    padding-left: 10px;
+    text-align: justify;
+    align-content: center;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
 }
 
 .portfolio-list {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
 }
 
 .portfolio-image {
-    width: 50%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
     margin-top: 10px;
     border-radius: 15px;
+    object-fit: cover;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin-right: 19px;
+    border:white solid 5px;
+    padding: 30px;
 }
 
 /* Footer styles */
