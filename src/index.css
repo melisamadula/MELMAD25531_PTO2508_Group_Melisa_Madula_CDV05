@@ -1,222 +1,343 @@
-*{
-    box-sizing: border-box;
+/* ==========================================================================
+   1. Global Resets & Base Styles
+   ========================================================================== */
+* {
+  box-sizing: border-box;
 }
 
-html, body, #root {
-    margin: 0;
-    height: 100%;
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
 }
 
 body {
-    font-family: Inter;
-    display: flex;
-    flex-direction: column;
-    background-color: #0f172a;
-    color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+  color: white;
+  font-size: 1.2rem;
 }
 
 #root {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
-
-/* Global styles */
-
 
 .container {
-    margin: 45px 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 40px;
 }
 
+/* ==========================================================================
+   2. Header Styles
+   ========================================================================== */
 header {
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    height: 55px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 55px;
+  width: 100%;
 }
 
 header > h1 {
-    font-size: 0.9rem;
-    font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-/* Entry styles */
-
+/* ==========================================================================
+   3. Website Entry Styles
+   ========================================================================== */
 .website-entry {
-    display: flex;
-    margin-bottom: 36px;
-    background-color: #0f172a;
+  display: flex;
+  margin-bottom: 60px;
+  background-color: #0f172a;
 }
 
 .main-image-container {
-    width: 100%;
-    height: 20%;
-    overflow: hidden;
-    border-radius: 15px;
-    flex-shrink: 0;
-    margin-right: 19px;
-    border:white solid 5px;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: white solid 6px;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 40px;
 }
 
 .main-image {
-    display: flex;
-    height: 100%;
-    width: 30%;
-    object-fit: cover;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
 }
 
 .image-caption {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  color: white;
 }
 
-/* Info container styles */
-
-.info-container a {
-    color: white;
-    font-size: 0.7rem;
-}
-
-.info-container a:visited {
-    color: #918E9B;
-}
-
-.info-container a:hover {
-    text-decoration: double underline;
-    color: #918E9B;
-}
-
-h2.entry-title {
-    margin-top: 7px;
-    margin-bottom: 17px;
+h1.entry-title {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
 }
 
 p.entry-text {
-    line-height: 1.5;
-    font-size: 0.8rem;
-    display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-/* Portfolio styles */
+.info-container a {
+  color: #38bdf8;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
+.info-container a:visited,
+.info-container a:hover {
+  color: #918e9b;
+}
+
+.info-container a:hover {
+  text-decoration: double underline;
+}
+
+/* ==========================================================================
+   4. Portfolio Section Styles
+   ========================================================================== */
 .portfolio-section {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-p.portfolio-description {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    padding-left: 10px;
-    text-align: justify;
-    align-content: center;
-    letter-spacing: 0.02em;
-    line-height: 1.6;
+.portfolio-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
 .portfolio-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-.portfolio-image {
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-.portfolio-image:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 20%;
-    overflow: hidden;
-    border-radius: 15px;
-    flex-shrink: 0;
-    margin-right: 19px;
-    border:white solid 5px;
-    padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: white solid 6px;
+  padding: 50px;
+  background-color: #1e293b;
+  gap: 40px;
 }
 
-/* Footer styles */
-
-.footer-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.portfolio-item > a {
+  width: 550px;
+  height: 320px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-.footer-icon:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.portfolio-image:hover {
+  transform: scale(1.05);
+}
+
+p.portfolio-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left;
+  margin: 0;
+}
+
+/* ==========================================================================
+   5. Footer Styles
+   ========================================================================== */
+footer {
+  width: 100%;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    color: black;
-    height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  height: 55px;
+  padding: 0 15px;
 }
 
 .footer-text {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out; 
+}
 
-/******* Responsive styles ********/
+.footer-icon:hover {
+  transform: scale(1.1);
+}
 
+/* ==========================================================================
+   6. Media Queries (Desktop to Mobile Breakpoints)
+   ========================================================================== */
+
+/* Tablet & Smaller Devices */
 @media (max-width: 768px) {
-    .container {
-        margin: 20px;
-    }
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
 
-    article.website-entry {
-        flex-direction: column;
-        align-items: center;
-    }
+  .website-entry {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 
-    article.website-entry .main-image-container {
-        width: 100%;
-        height: 40%;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+  .main-image-container,
+  .portfolio-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    gap: 25px;
+  }
 
-    article.website-entry .main-image {
-        width: 100%;
-        height: auto;
-    }
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
 
-    .info-container h2.entry-title {
-        text-align: center;
-    }
+  .portfolio-item > a {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+  }
 
-    .info-container p.entry-text {
-        line-clamp: unset;
-        -webkit-line-clamp: unset;
-    }
+  .image-caption {
+    text-align: center;
+  }
+
+  h1.entry-title {
+    font-size: 2.2rem;
+  }
+
+  p.entry-text,
+  p.portfolio-description {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Mobile Portrait Devices (320px to 425px) */
+@media (max-width: 425px) {
+  .container {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  header {
+    height: 90px;
+    padding: 0 15px;
+  }
+
+  header > h1 {
+    font-size: 1.3rem;
+  }
+
+  .main-image-container,
+  .portfolio-item {
+    padding: 20px;
+    border-width: 4px;
+    gap: 15px;
+  }
+
+  .main-image {
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .portfolio-item > a {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  h1.entry-title {
+    font-size: 1.6rem;
+  }
+
+  p.entry-text,
+  p.portfolio-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  
+  footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 15px;
+    height: auto;
+    min-height: 80px;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%; 
+  }
+
+  .footer-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+  }
 }
